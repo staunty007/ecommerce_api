@@ -17,7 +17,7 @@ class ProductResource extends Resource
         return [
             'name' => $this->name,
             'description' => $this->detail,
-            'proce' => $this->price,
+            'price' => $this->price,
             'stock' => $this->stock == 0 ? 'Out of Stock' : $this->stock,
             'discount' => $this->discount,
             'totalPrice' => round((1- ($this->discount/100)) * $this->price, 2),
